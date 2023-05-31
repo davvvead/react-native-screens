@@ -5,7 +5,7 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Button } from "react-native";
 import "react-native-gesture-handler";
 import { AccountTypeCard } from "./AccountTypeCard";
-AccountTypeCard;
+import AccountSettings from "./AccountSettings";
 
 const Stack = createStackNavigator();
 const hp = "100%";
@@ -15,8 +15,9 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          name="AccountTypeCard"
-          component={AccountTypeCard}
+          name="AccountSettings"
+          component={AccountSettings}
+          // options={{ headerShown: false }}
           options={{
             title: "Account Settings",
             headerTitleAlign: "center",

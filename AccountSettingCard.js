@@ -1,6 +1,6 @@
 import { MaterialIcons, AntDesign } from "@expo/vector-icons";
 import React from "react";
-import { Pressable, View, Image, Icon, SafeAreaView } from "react-native";
+import { View } from "react-native";
 import { Text } from "react-native-paper";
 
 function AccountSettingCard() {
@@ -17,11 +17,11 @@ function AccountSettingCard() {
       <View
         style={{
           flexDirection: "row",
-          alignContent: "center",
+          alignItems: "center",
           justifyContent: "space-between",
         }}
       >
-        <AntDesign name="BookOutlined" size={24} color="black" />
+        <AntDesign name="save" size={24} color="black" />
         <View
           style={{
             flexDirection: "column",
